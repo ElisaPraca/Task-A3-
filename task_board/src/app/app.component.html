@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Taskboard</mat-card-title>
+    <mat-card-subtitle>Gerencie suas tasks</mat-card-subtitle>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-grid-list cols="4" style="margin: 12px;">
+
+    <app-table titleTable="Tasks" color="red" [dataSource]="tasks()" (onClickTableButton)="createTask()" actionButton="incluir"
+      (onEdit)="editTask($event)" (onDelete)="delete($event)" iconTable="add_task" tooltipText="Criar task"/>
+
+    <app-table titleTable="Fila de tasks" color="orange" [dataSource]="tasksQueue()"
+      (onClickTableButton)="removeTaskFromQueue()" iconTable="view_week" tooltipText="Remover da fila"/>
+
+    <app-table titleTable="Pilha de tasks" color="green" [dataSource]="tasksStack()"
+      (onClickTableButton)="removeTaskFromStack()" iconTable="reorder" tooltipText="Remover da pilha"/>
+  </mat-grid-list>
+</mat-card>

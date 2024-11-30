@@ -1,0 +1,12 @@
+<div class="custom-dialog" >
+  <h2 class="dialog-title" >{{getTitle(data.enumDialogType)}}</h2>
+  <p class="message-content">{{ data.message }}</p>
+  <div class="dialog-buttons">
+    @if(isConfirma()){
+    <button mat-button class="cancel-button" (click)="onCancel()">
+      Cancelar
+    </button>
+    }
+    <button mat-raised-button [color]="getColorButton(data.enumDialogType)" (click)="onConfirm()">OK</button>
+  </div>
+</div>

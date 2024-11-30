@@ -1,0 +1,23 @@
+<form [formGroup]="form!" (ngSubmit)="onConfirm()">
+<mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>{{action()}} task</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p style="display: flex; flex-direction: column;">
+            <mat-form-field appearance="outline">
+              <mat-label>Título da task</mat-label>
+              <input matInput type="text" formControlName="title">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Descrição</mat-label>
+              <input matInput  type="text" formControlName="description">
+            </mat-form-field>
+        </p>
+    </mat-card-content>
+    <mat-card-actions style="display: flex; justify-content: end;">
+      <button mat-button type="button" (click)="dialogRef.close()">Cancelar</button>
+      <button mat-flat-button>OK</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

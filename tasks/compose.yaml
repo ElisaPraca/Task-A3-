@@ -1,0 +1,8 @@
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: api_tasks
+      MYSQL_ROOT_PASSWORD: password  # Define a senha para o usuário root
+    ports:
+      - "3306:3306"

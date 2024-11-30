@@ -1,0 +1,22 @@
+<div class="custom-dialog">
+    <h2 class="dialog-title">Informação<mat-icon>info</mat-icon></h2>
+    <p class="message-content">São exibidas 3 tabelas com as tasks do sistema.</p>
+    <p>
+        A primeira tabela lista as tasks cadastradas pelo usuário.
+    </p>
+    <p>
+        A segunda tabela exibe os registros criados através de uma fila. A terceira tabela exibe os registros criados
+        através de uma pilha.
+    </p>
+    Nas tabelas 2 e 3 há um botão que remove o registro da respectiva tabela, sendo que na fila o primeiro registro a
+    entrar é o primeiro a ser removido.
+    Para a pilha, o primeiro registro é o último a ser removido.
+    <div class="dialog-buttons">
+        @if(isConfirma()){
+        <button mat-button class="cancel-button" (click)="onCancel()">
+            Cancelar
+        </button>
+        }
+        <button mat-raised-button (click)="onConfirm()">OK</button>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+.custom-dialog {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dialog-title {
+    display: flex;
+    justify-content: start;
+    font-size: 24px;
+    margin-bottom: 20px;
+    align-items: end;
+  }
+  
+  .message-content {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .cancel-button {
+    margin-right: 10px;
+    color: #666666;
+  }
+  
+  .confirm-button {
+    background-color: #328f8a;
+    color: white;
+  }
+  
+  /* Estilos específicos para dispositivos com largura menor que 600 pixels (geralmente considerado como dispositivos móveis) */
+  @media only screen and (max-width: 600px) {
+    .custom-dialog {
+      width: calc(100% - 40px);
+    }
+  }

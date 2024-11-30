@@ -1,0 +1,27 @@
+.scrollable-content {
+  overflow-y: auto; /* Apenas barra vertical */
+  max-height: 400px; /* Altura máxima definida */
+  padding: 0px !important; /* Remove padding extra */
+  box-sizing: border-box; /* Inclui padding no tamanho total */
+  width: 100%;
+  background: cornflowerblue; /* Cor de fundo */
+  border-radius: 8px;
+  margin-bottom: 16px !important;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #888; /* Cor da barra */
+  border-radius: 4px; /* Bordas arredondadas */
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor ao passar o mouse */
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor do fundo da barra */
+}
