@@ -27,3 +27,11 @@ Spring Boot Docker Compose: Utilizada para integração com Docker Compose, simp
 MySQL Connector: Conector JDBC para comunicação com o banco de dados MySQL.
 Spring Boot Starter Test: Inclui bibliotecas para a realização de testes no projeto.
 Spring Boot Maven Plugin: Plugin Maven para empacotamento e execução de aplicações Spring Boot.
+
+RA:
+Dara Elisa Costa Praça 
+-12522196236
+Kallyel Cainan Santos Pinto -12524239066
+Daniel Tanaka Wako
+-12522125210
+Clara Barros de Azevedo - RA: -12524239001
